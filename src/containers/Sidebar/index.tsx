@@ -1,9 +1,20 @@
+import { Avatar } from '../../components/Avatar'
+import { Paragrafo } from '../../components/Paragrafo'
 import { Titulo } from '../../components/Titulo'
-import { AsideSection } from './styles'
+import { AsideSection, BotaoTema, Descricao, SidebarContainer } from './styles'
 
 export const Sidebar = () => (
   <AsideSection>
-    <img src="https://github.com/kevincamussi.png" alt="" />
-    <Titulo fontSize={20}>Kevin Camussi </Titulo>
+    <SidebarContainer>
+      <Avatar />
+      <Titulo fontSize={20}>Kevin Camussi </Titulo>
+      <Paragrafo tipo="secundario" fontSize={16}>
+        kevincamussi
+      </Paragrafo>
+      <Descricao tipo="principal" fontSize={12}>
+        Engenheiro Front-End
+      </Descricao>
+      <BotaoTema>Trocar tema</BotaoTema>
+    </SidebarContainer>
   </AsideSection>
 )
