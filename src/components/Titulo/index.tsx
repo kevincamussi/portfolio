@@ -5,6 +5,8 @@ export type Props = {
   fontSize?: number
 }
 
-export const Titulo = (props: Props) => (
+const Titulo = (props: Props) => (
   <TituloEstilo fontSize={props.fontSize}>{props.children}</TituloEstilo>
 )
+
+export default Titulo

@@ -1,6 +1,6 @@
-import { Avatar } from '../../components/Avatar'
-import { Paragrafo } from '../../components/Paragrafo'
-import { Titulo } from '../../components/Titulo'
+import Avatar from '../../components/Avatar'
+import Paragrafo from '../../components/Paragrafo'
+import Titulo from '../../components/Titulo'
 
 import { AsideSection, BotaoTema, Descricao, SidebarContainer } from './styles'
 
@@ -8,7 +8,7 @@ type Props = {
   trocaTema: () => void
 }
 
-export const Sidebar = (props: Props) => (
+const Sidebar = (props: Props) => (
   <AsideSection>
     <SidebarContainer>
       <Avatar />
@@ -23,3 +23,5 @@ export const Sidebar = (props: Props) => (
     </SidebarContainer>
   </AsideSection>
 )
+
+export default Sidebar
